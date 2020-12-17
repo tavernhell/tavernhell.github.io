@@ -1,0 +1,31 @@
+  :root {
+    --control-size: 75px;
+  }
+
+  .title {
+    font-size: 85px;
+    line-height: 85px;
+  }
+
+  .subtitle {
+    font-size: 23px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    width: var(--control-size);
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  div.text-center {
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    /* Vertical centring */
+    top: 50%; transform: translateY(-50%);
+    /* Left and right margin equals to carousel-control-prev */
+    left: var(--control-size); right: var(--control-size); 
+  }
