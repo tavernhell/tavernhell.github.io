@@ -1,23 +1,26 @@
   :root {
-    --control-size: 75px;
+    --carousel-control-size: 4vw;
+    --carousel-control-icon-size: 4vw;
+    --title-size: 5vw;
+    --subtitle-size: 2vw;
   }
 
   .title {
-    font-size: 85px;
-    line-height: 85px;
+    font-size: var(--title-size);
+    line-height: var(--title-size);
   }
 
   .subtitle {
-    font-size: 23px;
+    font-size: var(--subtitle-size);
   }
 
   .carousel-control-prev, .carousel-control-next {
-    width: var(--control-size);
+    width: var(--carousel-control-size);
   }
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 4rem;
-    height: 4rem;
+    width: var(--carousel-control-icon-size);
+    height: var(--carousel-control-icon-size);
   }
   
   div.text-container {
@@ -28,5 +31,5 @@
     /* Vertical centring */
     top: 50%; transform: translateY(-50%);
     /* Left and right margin equals to carousel-control-prev */
-    left: var(--control-size); right: var(--control-size); 
+    left: var(--carousel-control-size); right: var(--carousel-control-size); 
   }
