@@ -1,8 +1,8 @@
   :root {
-    --carousel-control-size: 4vw;
-    --carousel-control-icon-size: 4vw;
-    --title-size: 5vw;
-    --subtitle-size: 2vw;
+    --carousel-control-size: 5vmax;
+    --carousel-control-icon-size: 3.5vmax;
+    --title-size: 5vmax;
+    --subtitle-size: 2vmax;
   }
 
   .title {
@@ -10,7 +10,7 @@
     line-height: var(--title-size);
   }
 
-  .subtitle {
+  .subtitle, a.btn {
     font-size: var(--subtitle-size);
   }
 
@@ -31,5 +31,5 @@
     /* Vertical centring */
     top: 50%; transform: translateY(-50%);
     /* Left and right margin equals to carousel-control-prev */
-    left: var(--carousel-control-size); right: var(--carousel-control-size); 
+    left: calc(var(--carousel-control-size) + 10px); right: calc(var(--carousel-control-size) + 10px);
   }
